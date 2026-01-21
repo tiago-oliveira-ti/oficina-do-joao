@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Mecânico - Oficina Mecânica em Caruaru</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🔧</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Modal de Boas-vindas -->
+    <div class="welcome-modal" id="welcomeModal">
+        <div class="modal-content">
+            <h2>🔧 Bem-vindo à João Mecânico!</h2>
+            <p>Oficina mecânica de confiança em Caruaru. Especializada em manutenção automotiva completa com mais de 10 anos de experiência.</p>
+            <button class="btn" onclick="closeModal()">Conhecer Serviços</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">🔧 João Mecânico</div>
+                
+                <!-- Menu Desktop -->
+                <ul class="nav-links">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#brands">Marcas</a></li>
+                    <li><a href="#testimonials">Depoimentos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                
+                <!-- Botão Menu Mobile -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+        
+        <!-- Menu Mobile -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#home" class="mobile-link">🏠 Início</a></li>
+                <li><a href="#about" class="mobile-link">ℹ️ Sobre</a></li>
+                <li><a href="#services" class="mobile-link">🔧 Serviços</a></li>
+                <li><a href="#brands" class="mobile-link">🚗 Marcas</a></li>
+                <li><a href="#testimonials" class="mobile-link">💬 Depoimentos</a></li>
+                <li><a href="#contact" class="mobile-link">📞 Contato</a></li>
+                <li><a href="#schedule" class="mobile-link">📅 Agendar</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>João Mecânico - João Vital</h1>
+            <p>Sua oficina mecânica de confiança em Caruaru</p>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem;">✨ Mais de 10 anos de experiência | Carros Nacionais e Importados</p>
+            <a href="#schedule" class="btn">Agende seu Serviço</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Nós</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>🔧 Excelência em Manutenção Automotiva</h3>
+                    <p>Com mais de <strong>10 anos de experiência</strong> no mercado automotivo, a João Mecânico se consolidou como referência em Caruaru quando o assunto é cuidar do seu veículo.</p>
+                    <p>Atendemos todos os tipos de veículos, sejam <strong>nacionais ou importados</strong>, com a mesma dedicação e profissionalismo que nos tornou conhecidos na região.</p>
+                    <p>Nossa equipe é especializada e está sempre atualizada com as mais modernas técnicas de manutenção e diagnóstico automotivo.</p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">⚡</span>
+                            <div>
+                                <h4>Atendimento Rápido</h4>
+                                <p>Serviços ágeis sem perder a qualidade</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">💯</span>
+                            <div>
+                                <h4>Garantia de Qualidade</h4>
+                                <p>Peças originais e serviço garantido</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">💰</span>
+                            <div>
+                                <h4>Preço Justo</h4>
+                                <p>Orçamento transparente e honesto</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hours-card">
+                    <h3>⏰ Horário de Funcionamento</h3>
+                    <div class="hours-list">
+                        <div class="hours-item">
+                            <span class="day">Segunda a Sexta</span>
+                            <span class="time">8h às 18h</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">Sábado</span>
+                            <span class="time">8h às 12h</span>
+                        </div>
+                        <div class="hours-item closed">
+                            <span class="day">Domingo</span>
+                            <span class="time">Fechado</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: 2rem;">
+                        <a href="tel:81997045142" class="btn">📞 Ligar Agora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🛢️</div>
+                    <h3>Troca de Óleo e Filtros</h3>
+                    <p>Manutenção preventiva completa com óleos de qualidade e filtros originais para garantir o melhor desempenho do seu veículo.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>Revisão Completa</h3>
+                    <p>Inspeção detalhada de todos os sistemas do veículo para identificar e prevenir problemas antes que se tornem graves.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚖️</div>
+                    <h3>Alinhamento e Balanceamento</h3>
+                    <p>Serviço especializado para garantir estabilidade, economia de combustível e vida útil prolongada dos pneus.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛑</div>
+                    <h3>Freios e Suspensão</h3>
+                    <p>Manutenção e reparo do sistema de freios e suspensão para sua segurança e conforto ao dirigir.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Diagnóstico Eletrônico</h3>
+                    <p>Equipamentos de última geração para identificar falhas eletrônicas e garantir o funcionamento perfeito do seu carro.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">❄️</div>
+                    <h3>Ar-condicionado Automotivo</h3>
+                    <p>Manutenção, recarga e reparo de ar-condicionado para seu conforto em todas as estações.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands-section" id="brands">
+        <div class="container">
+            <h2 class="section-title">Trabalhamos com Todas as Marcas</h2>
+            <p class="brands-subtitle">Atendemos carros nacionais e importados</p>
+            <div class="brands-grid">
+                <div class="brand-card">Volkswagen</div>
+                <div class="brand-card">Fiat</div>
+                <div class="brand-card">Chevrolet</div>
+                <div class="brand-card">Ford</div>
+                <div class="brand-card">Toyota</div>
+                <div class="brand-card">Honda</div>
+                <div class="brand-card">Hyundai</div>
+                <div class="brand-card">Nissan</div>
+                <div class="brand-card">Renault</div>
+                <div class="brand-card">Peugeot</div>
+                <div class="brand-card">Citroën</div>
+                <div class="brand-card">Jeep</div>
+            </div>
+            <p style="text-align: center; margin-top: 2rem; font-size: 1.1rem; color: #666;">
+                E muitas outras marcas! Se não encontrou a sua, entre em contato.
+            </p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">O Que Nossos Clientes Dizem</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Excelente atendimento! João é muito honesto e sempre explica o que precisa ser feito no carro. Preço justo e serviço de qualidade. Recomendo!"</p>
+                    <div class="testimonial-author">
+                        <strong>Carlos Silva</strong>
+                        <span>Fiat Uno</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Levei meu Corolla para revisão e fiquei muito satisfeita. Equipe profissional, ambiente limpo e organizado. Voltarei sempre!"</p>
+                    <div class="testimonial-author">
+                        <strong>Maria Oliveira</strong>
+                        <span>Toyota Corolla</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Melhor oficina de Caruaru! Resolveram um problema que outras oficinas não conseguiram identificar. Super indico!"</p>
+                    <div class="testimonial-author">
+                        <strong>Pedro Santos</strong>
+                        <span>Volkswagen Gol</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Atendimento rápido e eficiente. João sempre me atende com atenção e resolve tudo. Confiança total!"</p>
+                    <div class="testimonial-author">
+                        <strong>Ana Paula</strong>
+                        <span>Honda Civic</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Schedule Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>📍 Informações de Contato</h3>
+                    <div class="contact-item">
+                        <strong>📞 Telefone/WhatsApp:</strong> (81) 99704-5142
+                    </div>
+                    <div class="contact-item">
+                        <strong>📧 Email:</strong> tech.tiago.oliveira@gmail.com
+                    </div>
+                    <div class="contact-item">
+                        <strong>📍 Endereço:</strong> Rua Machado de Assis, 100
+                    </div>
+                    <div class="contact-item">
+                        <strong>🏘️ Bairro:</strong> Jardim Boa Vista
+                    </div>
+                    <div class="contact-item">
+                        <strong>🌆 Cidade:</strong> Caruaru, PE
+                    </div>
+                    <div style="margin-top: 2rem;">
+                        <a href="https://wa.me/5581997045142" class="btn" style="margin-right: 10px;">💬 WhatsApp</a>
+                        <a href="https://maps.app.goo.gl/cwEdgB6qCwnGxzbbA" target="_blank" class="btn">📍 Ver Localização</a>
+                    </div>
+                </div>
+
+                <div id="schedule">
+                    <h3 style="margin-bottom: 1.5rem; color: #1a1a2e;">📅 Agendar Serviço</h3>
+                    <form id="scheduleForm">
+                        <div class="form-group">
+                            <label>Nome Completo</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Telefone</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Serviço Desejado</label>
+                            <select id="service" required>
+                                <option value="">Selecione um serviço</option>
+                                <option value="Troca de óleo e filtros">Troca de óleo e filtros</option>
+                                <option value="Revisão completa">Revisão completa</option>
+                                <option value="Alinhamento e balanceamento">Alinhamento e balanceamento</option>
+                                <option value="Freios e suspensão">Freios e suspensão</option>
+                                <option value="Diagnóstico eletrônico">Diagnóstico eletrônico</option>
+                                <option value="Ar-condicionado automotivo">Ar-condicionado automotivo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Data Preferida</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Observações</label>
+                            <textarea id="notes" rows="4" placeholder="Descreva o problema ou observações adicionais"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Agendamento</button>
+                    </form>
+                    <div class="success-message" id="successMessage">
+                        ✅ Agendamento enviado com sucesso! Entraremos em contato em breve.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 João Mecânico - João Vital. Todos os direitos reservados.</p>
+            <p>Caruaru, PE - Jardim Boa Vista</p>
+            <p>📧 tech.tiago.oliveira@gmail.com | 📞 (81) 99704-5142</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">Mais de 10 anos cuidando do seu veículo com excelência</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5581997045142" class="whatsapp-float" target="_blank">
+        💬
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
